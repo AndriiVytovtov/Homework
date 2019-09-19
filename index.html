@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        try {
+            let page = new Page();
+            page.addWidget(new Todo(".wiget-todo"));
+            page.start();
+        } catch (e) {
+            alert(e.message);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container wiget-todo">
+        <div class="todo add-user active">
+            <div class="add">
+                <div>
+                    <input type="text" class="user-name">
+                </div>
+                <div>
+                    <button class="btn-add-user">add</button>
+                </div>
+            </div>
+            <div class="user-list list">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="todo add-note no-active">
+            <div class="add">
+                <div>
+                    <input type="text" class="title-note">
+                </div>
+                <div>
+                    <button class="btn-add-note">add</button>
+                </div>
+            </div>
+            <div>
+                <textarea class="text-note"></textarea>
+            </div>
+            <div class="list notes-list">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="todo view-note no-active">
+            <div class="title-note curve">
+            </div>
+            <div class="text-note curve">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

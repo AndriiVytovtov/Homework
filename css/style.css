@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+.curve {
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #393939;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.container .todo {
+    display: none;
+}
+
+.container .todo.active {
+    display: block;
+}
+
+.container .todo {
+    margin: 20px auto;
+    width: 350px;
+    padding: 20px;
+    background-color: #3D84DA;
+    box-sizing: border-box;
+}
+
+.container .todo .add {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .todo .add div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container .todo .add input, .container .todo .add button, .container .todo textarea {
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #393939;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.container .todo textarea {
+    width: 310px;
+    height: 150px;
+    margin-top: 10px;
+    resize: none;
+    padding: 8px;
+    box-sizing: border-box;
+
+}
+
+.container .todo .add input {
+    margin-left: 6px;
+    width: 220px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+
+.container .todo .add button {
+    margin-left: 8px;
+    width: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container .todo .add button:hover {
+    background-color: #ccc;
+}
+
+.container .todo .list {
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.container .todo .list ul li {
+    list-style: none;
+    width: 300px;
+    height: 50px;
+    box-shadow: 1px 1px 1px 1px #393939;
+    color: #fff;
+    padding: 0 5px;
+    margin-top: 15px;
+    overflow: hidden;
+    background-color: #469BFD;
+}
+
+.container .todo .list ul li div {
+    display: inline-block;
+}
+
+.container .todo .list ul li div:nth-child(2) {
+    float: right;
+}
+
+.container .todo .list ul li div:nth-child(2) .btn-delete, .container .todo .list ul li div:nth-child(2) .btn-open {
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container .todo .list ul li div:nth-child(2) .btn-delete {
+    background-image: url("../img/delete.png");
+}
+
+.container .todo .list ul li div:nth-child(2) .btn-open {
+    background-image: url("../img/open.png");
+}
+
+.container .view-note>div {
+    margin-top: 10px;
+}
+
+.container .view-note .title-note {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.container .view-note .text-note {
+    min-height: 150px;
+    height: auto;
+}
